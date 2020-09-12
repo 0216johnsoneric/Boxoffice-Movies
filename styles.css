@@ -1,3 +1,4 @@
+/* NAV BAR CSS */
 .topbar-responsive {
     background: #2c3840;
     padding: 1rem 1.5rem;
@@ -127,3 +128,148 @@
 }
 
 
+/* MAIN MOVIE SECTION CSS */
+.movie-section {
+    background: url("https://media.comicbook.com/2019/07/disney-box-office-2019-1180825-1280x0.jpeg") 50% no-repeat;
+    background-size: cover;
+    height: 75vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.movie-section .movie-section-text {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+
+/* FOOTER SECTION CSS */
+.translucent-form-overlay {
+  max-width: 500px;
+  width: 100%;
+  background-color: rgba(54, 54, 54, 0.8);
+  padding: 20px;
+  color: #fefefe;
+}
+
+.translucent-form-overlay .columns.row {
+  display: block;
+}
+
+.translucent-form-overlay h3, .translucent-form-overlay label {
+  color: #fefefe;
+}
+
+.translucent-form-overlay input, .translucent-form-overlay select {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::-webkit-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input:-ms-input-placeholder {
+  color: #8a8a8a;
+}
+
+.translucent-form-overlay input::placeholder {
+  color: #8a8a8a;
+}
+
+
+.movie-site-footer {
+    background: #2c3840;
+    color: #8aa0ae;
+    padding: 2rem 0 0;
+}
+
+.movie-site-footer .movie-site-footer-menu-social a {
+    color: #fefefe;
+}
+
+.movie-site-footer .column-block {
+    margin-bottom: 30px;
+}
+
+.movie-site-footer > .row {
+    margin-bottom: 1rem;
+}
+
+@media screen and(max-width: 39.9375em) {
+    .movie-site-footer .columns {
+        margin-bottom: 2rem;
+    }
+}
+
+.movie-site-footer-name {
+    color: #fefefe;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    /* text-align: center; */
+
+}
+
+.movie-site-footer-title {
+    color: #fefefe;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.movie-site-footer-block {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.movie-site-footer-block .fa {
+    font-size: 2rem;
+    color: #020304;
+}
+
+.movie-site-footer-block p {
+    margin-left: 1rem;
+    line-height: 1.125rem;
+}
+
+.movie-site-footer-bottom {
+    background: #020304;
+    padding: 1rem 0;
+}
+
+.movie-site-footer-bottom p,
+.movie-site-footer-bottom .menu {
+    margin-bottom: 0;
+}
+
+.movie-site-footer-bottom .movie-site-footer-bottom-links {
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+}
+
+.movie-site-footer-bottom .movie-site-footer-bottom-links a {
+    color: #8aa0ae;
+}
+
+@media screen and(max-width: 63.9375em) {
+    .movie-site-footer-bottom .movie-site-footer-bottom-links {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+}
+
+@media screen and(max-width: 63.9375em) {
+    .movie-site-footer-bottom {
+        text-align: center;
+    }
+}
