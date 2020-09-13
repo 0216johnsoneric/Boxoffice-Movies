@@ -1,4 +1,6 @@
 $(document).ready(() => {
+    const apiMovieKey = "aaea85d9555b588ecf30aa20af8cc8de";
+    const imageUrl = "https://image.tmdb.org/t/p/w500";
 
     $('#searchForm').on('submit', (event) => {
         event.preventDefault();
@@ -25,6 +27,7 @@ $(document).ready(() => {
                     <br></br>
                     <h4>Title:</h4>
                     <h5>${movie.title}</h5>
+                    <img src=${imageUrl + movie.poster_path} data-movie-id=${movie.id}/>
                     <h4>Rating:</h4>
                     <h5>${movie.vote_average}</h5>
                     <h4>Description:</h4>
