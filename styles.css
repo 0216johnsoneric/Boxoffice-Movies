@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
 /* NAV BAR CSS */
 .topbar-responsive {
     background: #2c3840;
@@ -272,4 +277,10 @@
     .movie-site-footer-bottom {
         text-align: center;
     }
+}
+
+#movies {
+background-color: lightsteelblue;
+background-size: cover;
+
 }
