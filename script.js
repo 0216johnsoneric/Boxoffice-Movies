@@ -21,12 +21,16 @@ $(document).ready(() => {
                 let movies = response.results;
                 let output = '';
             $.each(movies, (index, movie) => {
+
+                // Only Render movie data with valid poster path === true
+                if(movie.poster_path){
                 output += `
                 <div class="col-md-3">
                     <div class="lists text-center">
                     <br></br>
-                    <h4>Title:</h4>
-                    <h5>${movie.title}</h5>
+                    
+                    <h2>${movie.title}</h2>
+                    <br></br>
                     <img src=${imageUrl + movie.poster_path} data-movie-id=${movie.id}/>
                     <h4>Rating:</h4>
                     <h5>${movie.vote_average}</h5>
@@ -37,13 +41,15 @@ $(document).ready(() => {
                    </div>
                 </div> 
                 `;
+                }
+
             });
             $('#movies').html(output);
         })
         .catch((err) => {
             console.log(err);
         });
-
+        // searchMovie.val = " ";
     }
-
+    
 });
