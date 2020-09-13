@@ -10,7 +10,8 @@ $(document).ready(() => {
     function getMovies(searchMovie) {
         console.log(searchMovie);
         $.ajax({
-            url: "https://api.themoviedb.org/3/movie/now_playing?api_key=aaea85d9555b588ecf30aa20af8cc8de",
+            url: "https://api.themoviedb.org/3/search/movie?api_key=aaea85d9555b588ecf30aa20af8cc8de&query=" + searchMovie,
+            // url: "https://api.themoviedb.org/3/movie/now_playing?api_key=aaea85d9555b588ecf30aa20af8cc8de",
             method: "GET",
             }) 
             .then((response) => {
