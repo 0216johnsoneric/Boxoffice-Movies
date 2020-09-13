@@ -93,14 +93,6 @@ function getMovies() {
     // movies.push(movies);
     // localStorage.setItem("movies", JSON.stringify(movies));
 
-    // list cities searched
-//     var movieList = $("<li > ");
-//     movieList.addClass("list-group-item city-item");
-//     movieList.text(response.name);
-//     movieList.attr("lat", response.coord.lat);
-//     movieList.attr("lon", response.coord.lon);
-//     movieList.css("background-color", "lightgray");
-//     movieList.css("color", "blue");
-//     $("#movie-list").prepend(movieList);
+
 
 //     });
