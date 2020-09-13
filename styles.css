@@ -282,13 +282,13 @@
 #movies {
 background-color: lightsteelblue;
 background-size: cover;
-/* display: flex; */
-/* width: 100%;
+/* display: flex;
+width: 100%;
 overflow-x: auto; */
 }
 
 img {
-    width: 400px;
+    width: 350px;
 }
 
 img:hover {
