@@ -1,7 +1,7 @@
-const apiMovieKey = "aa555cd280msh51f717ae40f3c1bp121d34jsn1b21ee396616";
-const apiMovieApp = "25896a7c65mshe2ebaa88e6c4e04p18b8a6jsne556cdf570ee";
-var apiTheMovieDb = "aaea85d9555b588ecf30aa20af8cc8de";
-
+// const apiMovieKey = "aa555cd280msh51f717ae40f3c1bp121d34jsn1b21ee396616";
+// const apiMovieApp = "25896a7c65mshe2ebaa88e6c4e04p18b8a6jsne556cdf570ee";
+// var apiTheMovieDb = "aaea85d9555b588ecf30aa20af8cc8de";
+// const apiKey = "bead26a4";
 
 // var savedMovies;
 // var lastMovieSearched;

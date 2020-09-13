@@ -1,24 +1,22 @@
 $(document).ready(() => {
-    // const apiKey = "bead26a4";
 
     $('#searchForm').on('submit', (event) => {
         event.preventDefault();
-        let searchText = $('#searchText').val();
-        getMovies(searchText);
+        let searchMovie = $('#searchMovie').val();
+        getMovies(searchMovie);
         
     });
-});
 
-function getMovies(searchText) {
-    console.log(searchText);
-    $.ajax({
-        url: "https://api.themoviedb.org/3/movie/now_playing?api_key=aaea85d9555b588ecf30aa20af8cc8de",
-        method: "GET",
-        }) 
-        .then((response) => {
-            console.log(response);
-            let movies = response.results;
-            let output = '';
+    function getMovies(searchMovie) {
+        console.log(searchMovie);
+        $.ajax({
+            url: "https://api.themoviedb.org/3/movie/now_playing?api_key=aaea85d9555b588ecf30aa20af8cc8de",
+            method: "GET",
+            }) 
+            .then((response) => {
+                console.log(response);
+                let movies = response.results;
+                let output = '';
             $.each(movies, (index, movie) => {
                 output += `
                 <div class="col-md-3">
@@ -41,4 +39,7 @@ function getMovies(searchText) {
         .catch((err) => {
             console.log(err);
         });
-}
+
+    }
+
+});
