@@ -25,6 +25,6 @@ B)	The title search in this app will bring multiple options for movies informati
 C)	Family and fans would be able to evaluate rating of movies in order to determine what is appropriate for their family entertainment choice.
 
 3.	Why do they want to achieve this?
-User will find this app very easy to consume important information about movies; whether the user wants to know the overall movie rating or general information about the best or the worse rating at all time. User will have that information at their finger tips.
+User will find this app very easy to consume important information about movies; whether the user wants to know the overall movie rating or general information about the best or the worse rating at all time. User will have that information at their fingertips.
 
 
