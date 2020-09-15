@@ -1,5 +1,5 @@
 # Boxoffice-Movies
-
+<img src="assets/images/Screen Shot 2020-09-12 at 10.43.42 PM.png">
 # Project Title:
 Boxoffice-Movies
 
@@ -14,4 +14,4 @@ For this project, we are going to making a movie database to help find your favo
 
 # User Story 
 
-<img src="assets/images/Screen Shot 2020-09-12 at 10.43.42 PM.png">
+
