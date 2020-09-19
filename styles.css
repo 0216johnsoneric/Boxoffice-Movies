@@ -134,7 +134,7 @@
 
 
 /* MAIN MOVIE SECTION CSS */
-.movie-section {
+.index-section {
     background: url("https://media.comicbook.com/2019/07/disney-box-office-2019-1180825-1280x0.jpeg") 50% no-repeat;
     background-size: cover;
     height: 75vh;
@@ -150,11 +150,53 @@
     justify-content: center;
 }
 
-.movie-section .movie-section-text {
+.index-section .index-section-text {
     color: #fefefe;
-    text-shadow: 1px 1px 2px #0a0a0a;
+    text-shadow: 1px 1px 2px red;
 }
 
+
+.movie-section {
+    background: url("https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg") 50% no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.movie-section .movie-section-text {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px red;
+}
+
+
+.Tv-Show {
+    background: url("https://eskiz.arcbazar.com/wp-content/uploads/2017/08/cover-tv-shows-house-800x423.jpg") 30% no-repeat;
+    background-size: cover;
+    height: 75vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.Tv-Show .Tv-Show-text {
+    color: #fefefe;
+    text-shadow: 1px 1px 2px red;
+}
 
 /* FOOTER SECTION CSS */
 .translucent-form-overlay {
@@ -280,11 +322,11 @@
 }
 
 #movies {
-background-color: lightsteelblue;
+background-color: rgb(131, 174, 216);
 background-size: cover;
 /* display: flex;
 width: 100%;
-overflow-x: auto; */
+overflow-x: auto;   */
 }
 
 img {
@@ -293,6 +335,6 @@ img {
 
 img:hover {
     margin-left: 0 40px;
-    transform: scale(1.2);
+    transform: scale(1.07);
     cursor: pointer;
 }

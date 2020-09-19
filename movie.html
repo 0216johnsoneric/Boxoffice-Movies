@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boxoffice Movies</title>
+    <link rel="stylesheet" href="assets/css/foundation.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/bc519c4149.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--NAV BAR-->
+    <nav class="top-bar topbar-responsive">
+        <div class="top-bar-title">
+            <div class="topbar-responsive-logo"><strong><i class="fas fa-film"></i>&emsp;Boxoffice Movies</strong>
+            </div>
+        </div>
+        <div id="topbar-responsive" class="topbar-responsive-links">
+            <div class="top-bar-right">
+                <ul class="menu simple vertical medium-horizontal">
+                    <li><a href="#">Movies</a>
+                    <li><a href="tvshow.html">TV Shows</a> </li>
+                    <!--Home Button -->
+                    <li> <a href="index.html"><button type="button" class="button hollow topbar-responsive-button">Home Page</button></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Main Div Section -->
+    <div class="movie-section">
+        <div class="movie-section-text">
+            <h1>Welcome to your Movies!</h1>
+            <h5>Search for any Movie you like:</h5>
+            <form id="searchMovieForm">
+                <input type="text" class="form-control" id="searchMovie" placeholder="Search Movies...">
+            </form>
+        </div>
+    </div>
+    <div class="container">
+        <div id="movies" class="row"></div>
+    </div>
+    <!--Footer Div Section -->
+    <footer class="movie-site-footer">
+        <div class="row medium-unstack">
+            <div class="medium-4 columns">
+                <!-- <h4 class="movie-site-footer-name text-center">Boxoffice Movies</h4> -->
+            <p class="movie-site text-center">Bringing all movies to one site</p>
+
+            </div>
+            <div class="movie-site-footer-bottom">
+                <div class="row large-unstack align-middle">
+                    <div class="column">
+                        <p>&copy; 2020 Fans Top Sites</p>
+                    </div>
+                    <div class="column">
+                        <ul class="menu movie-site-footer-menu-social simple">
+                            <li><a href="#"><i class="fa fa-imdb" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-ticket" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-video-camera" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-file-video-o" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-film" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <ul class="menu movie-site-footer-bottom-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="tvshow.html">TV Shows</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </footer>
+    <!--Script -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js" type="text/javascript"></script>
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/foundation.js"></script>
+</body>
+
+</html>
