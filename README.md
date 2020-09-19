@@ -27,4 +27,6 @@ C)	Family and fans would be able to evaluate rating of movies in order to determ
 3.	Why do they want to achieve this?
 User will find this app very easy to consume important information about movies; whether the user wants to know the overall movie rating or general information about the best or the worse rating at all time. User will have that information at their fingertips.
 
-
+Resorces: 
+1) https://www.themoviedb.org/settings/api
+2) http://www.omdbapi.com/

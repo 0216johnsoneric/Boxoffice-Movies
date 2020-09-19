@@ -178,10 +178,10 @@
 }
 
 
-.Tv-Show {
+.tv-show {
     background: url("https://eskiz.arcbazar.com/wp-content/uploads/2017/08/cover-tv-shows-house-800x423.jpg") 30% no-repeat;
     background-size: cover;
-    height: 75vh;
+    height: 80vh;
     text-align: center;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -193,7 +193,7 @@
     -ms-flex-pack: center;
     justify-content: center;
 }
-.Tv-Show .Tv-Show-text {
+.tv-show .tv-show-text {
     color: #fefefe;
     text-shadow: 1px 1px 2px red;
 }
@@ -322,11 +322,16 @@
 }
 
 #movies {
-background-color: rgb(131, 174, 216);
-background-size: cover;
+    background-color: rgb(109, 131, 154);
+    background-size: cover;
 /* display: flex;
 width: 100%;
 overflow-x: auto;   */
+}
+
+#tvshows {
+    background-color: rgb(109, 131, 154);
+    background-size: cover;
 }
 
 img {

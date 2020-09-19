@@ -1,7 +1,7 @@
 $(document).ready(() => {
 
     // VARIABLES
-    // iOMBD SEARCH AND iMDB SEARCH API KEYS
+    // OMBD SEARCH AND IMDB SEARCH API KEYS
     const apiOMDB1 = "bead26a4&s=";
     const apiOMDB2 = "bead26a4&i=";
     //  theMovieDB Query API KEY / IMAGE URL
@@ -21,13 +21,6 @@ $(document).ready(() => {
         event.preventDefault();
         let searchTv = $('#searchTv').val();
         getTvShows(searchTv);
-
-    });
-
-    $('#searchActorForm').on('submit', (event) => {
-        event.preventDefault();
-        let searchActor = $('#searchActor').val();
-        getActors(searchActor);
 
     });
 
@@ -130,45 +123,6 @@ $(document).ready(() => {
 
     }
 
-    function getActors(searchActor) {
-        console.log(searchActor);
-        $.ajax({
-            url: "https://api.themoviedb.org/3/search/person?api_key=" + apiTMDB + searchActor,
-            method: "GET",
-        })
-            .then((newdata) => {
-                console.log(newdata);
-                let actors = newdata.results;
-                let output = '';
-                $.each(actors, (index, actor) => {
-                    // if (actor.poster_path) {
-                        output += `
-                <div class="col-md-3">
-                    <div class="lists text-center">
-                        <br></br>
-                    <h2>${actor.name}</h2>
-                
-                    <img src=${imageUrl + actor.profile_path} data-movie-id=${actor.id} />
-                    
-                    <h2>${actor.known_for.title}</h2>
-                    
-                    </div>
-                </div> 
-                `;
-
-                    // }
-
-                });
-                $('#actors').html(output);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
-
-    }
-
-    
-                      
 
 });
 
