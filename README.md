@@ -2,17 +2,22 @@
 
 <img src="assets/images/Screen Shot 2020-09-19 at 2.40.19 PM.png">
 
+Github Pages: https://0216johnsoneric.github.io/Boxoffice-Movies/
+
+Clone lab: git clone git@github.com:0216johnsoneric/Boxoffice-Movies.git 
+Run in Browser w/ localhost or VS code browser extension
+
 # Project Title:
 Boxoffice-Media: Movies and TV Shows
 
 # Team Codename:
-Lucky #13
+Lucky #13 (after our breakout room number)
 
 # Team Members:
 Eric Johnson, Eli Badio, Brian Garrity 
 
 # Project Description:
-For this project, we are going to making a Movie and TV app that helps you find your favorite Movies and TV Shows that are in box office theaters, on streaming platforms, or on television. We will be using multiply API Keys and data from such website databases The Movie Database (themoviedb.org), The Open Movie Database (http://www.omdbapi.com/), and The Internet Movie Database (imdb.com) to display your favorite Movie and TV show data. 
+For this project, we are going to making a Movie and TV app that helps you find your favorite Movies and TV Shows that are in box office theaters, on streaming platforms, or on television. We will be using multiply API Keys and data from such website databases The Movie Database (http://www.themoviedb.org), The Open Movie Database (http://www.omdbapi.com/), and The Internet Movie Database (http://www.imdb.com) to display your favorite Movie and TV show data. 
 
 # User Story 
 
