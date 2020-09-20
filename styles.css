@@ -135,7 +135,8 @@
 
 /* MAIN MOVIE SECTION CSS */
 .index-section {
-    background: url("https://media.comicbook.com/2019/07/disney-box-office-2019-1180825-1280x0.jpeg") 50% no-repeat;
+    /* background: url("https://media.comicbook.com/2019/07/disney-box-office-2019-1180825-1280x0.jpeg") 50% no-repeat; */
+    background-image: url("assets/images/highdef-cover.jpg");
     background-size: cover;
     height: 75vh;
     text-align: center;
@@ -157,7 +158,8 @@
 
 
 .movie-section {
-    background: url("https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg") 50% no-repeat;
+    /* background: url("https://s3-us-west-2.amazonaws.com/flx-editorial-wordpress/wp-content/uploads/2018/03/13153742/RT_300EssentialMovies_700X250.jpg") 50% no-repeat; */
+    background-image: url("assets/images/highdef-movies.jpg");
     background-size: cover;
     height: 80vh;
     text-align: center;
@@ -179,7 +181,9 @@
 
 
 .tv-show {
-    background: url("https://eskiz.arcbazar.com/wp-content/uploads/2017/08/cover-tv-shows-house-800x423.jpg") 30% no-repeat;
+    /* background: url("https://eskiz.arcbazar.com/wp-content/uploads/2017/08/cover-tv-shows-house-800x423.jpg") 30% no-repeat; */
+    background-image: url("assets/images/highdef-tvshows.jpg");
+
     background-size: cover;
     height: 80vh;
     text-align: center;
@@ -322,15 +326,25 @@
 }
 
 #movies {
-    background-color: rgb(109, 131, 154);
+    height: 100%;
+    color: #272727;
+    line-height: 1.8;
+    background: linear-gradient(to right, #5b6ad7, #dc6c11);
     background-size: cover;
+}
+
 /* display: flex;
 width: 100%;
 overflow-x: auto;   */
-}
+
 
 #tvshows {
-    background-color: rgb(109, 131, 154);
+    /* background-color: rgb(109, 131, 154);
+    background-size: cover; */
+    height: 100%;
+    color: #272727;
+    line-height: 1.8;
+    background: linear-gradient(to right, #5b6ad7, #dc6c11);
     background-size: cover;
 }
 

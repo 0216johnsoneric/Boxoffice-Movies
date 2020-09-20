@@ -1,6 +1,6 @@
 # Boxoffice-Movies
 
-<img src="assets/images/Screen Shot 2020-09-19 at 2.40.19 PM.png">
+<img src="assets/images/Screen Shot 2020-09-19 at 7.55.53 PM.png">
 
 
 Clone lab: git clone git@github.com:0216johnsoneric/Boxoffice-Movies.git 
