@@ -29,7 +29,7 @@ $(document).ready(() => {
     function getMovies(searchMovie) {
         console.log(searchMovie);
         $.ajax({
-            url: "http://www.omdbapi.com/?apikey=" + apiOMDB1 + searchMovie,
+            url: "https://www.omdbapi.com/?apikey=" + apiOMDB1 + searchMovie,
             method: "GET",
         })
             .then((response) => {
@@ -42,7 +42,7 @@ $(document).ready(() => {
                     if (movie.Poster) {
                         let imdbId = movie.imdbID
                         $.ajax({
-                            url: "http://www.omdbapi.com/?apikey=" + apiOMDB2 + imdbId,
+                            url: "https://www.omdbapi.com/?apikey=" + apiOMDB2 + imdbId,
                             method: "Get",
                         })
                         .then((response2) => {
@@ -64,7 +64,7 @@ $(document).ready(() => {
                             </div>
                             <div class="links">
                             
-                            <a href="http://imdb.com/title/${response2.imdbID}" target="_blank" class="button primary">IMDB Website</a> | | |
+                            <a href="https://imdb.com/title/${response2.imdbID}" target="_blank" class="button primary">IMDB Website</a> | | |
                             <a href="index.html" class="button primary">Home Page</a>
                             </div>
                             <hr>
@@ -82,7 +82,7 @@ $(document).ready(() => {
             });
     }
     
-
+    // theMovieDB API KEY to Query TV Shows
     function getTvShows(searchTv) {
         console.log(searchTv);
         $.ajax({
@@ -103,10 +103,10 @@ $(document).ready(() => {
                     <img src=${imageUrl + tv.poster_path} data-movie-id=${tv.id} />
                     <br></br>
                     <div class="col-md-6">
-                            <ul class="list-group">
-                                <li class="list-group-item"><strong>TMDB Rating:</strong> ${tv.vote_average}</li>
-                                <li class="list-group-item"><strong>Description:</strong> ${tv.overview}</li>
-                            </ul>
+                        <ul class="list-group">
+                            <li class="list-group-item"><strong>TMDB Rating:</strong> ${tv.vote_average}</li>
+                            <li class="list-group-item"><strong>Description:</strong> ${tv.overview}</li>
+                        </ul>
                     </div>
                     </div>
                 </div> 
