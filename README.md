@@ -32,5 +32,5 @@ User will find this app very easy to consume important information about movies;
 
 Resorces: 
 1) https://www.themoviedb.org/settings/api
-2) http://www.omdbapi.com/
-3) http://www.imdb.com/
+2) https://www.omdbapi.com/
+3) https://www.imdb.com/
