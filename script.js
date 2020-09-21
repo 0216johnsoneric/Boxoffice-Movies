@@ -108,6 +108,9 @@ $(document).ready(() => {
                             <li class="list-group-item"><strong>Description:</strong> ${tv.overview}</li>
                         </ul>
                     </div>
+                    <div class="links">
+                        <a href="index.html" class="button primary">Home Page</a>
+                    </div>
                     </div>
                 </div> 
                 `;
