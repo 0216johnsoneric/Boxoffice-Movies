@@ -66,7 +66,7 @@ $(document).ready(() => {
                             </div>
                             <div class="links">
                             
-                            <a href="https://imdb.com/title/${response2.imdbID}" target="_blank" class="button primary">IMDB Website</a> | | |
+                            <a href="https://imdb.com/title/${response2.imdbID}" class="button primary">IMDB Website</a> | | |
                             <a href="index.html" class="button primary">Home Page</a>
                             </div>
                             <hr>
