@@ -28,6 +28,7 @@ $(document).ready(() => {
     // iOMDB/iMDB getMovies Function containing AJAX call for iOMDB and nested AJAX call for iMDB
     function getMovies(searchMovie) {
         console.log(searchMovie);
+
         $.ajax({
             url: "https://www.omdbapi.com/?apikey=" + apiOMDB1 + searchMovie,
             method: "GET",
@@ -40,6 +41,7 @@ $(document).ready(() => {
                 $.each(movies, (index, movie) => {
                 // Only Render movie data with valid poster path === true
                     if (movie.Poster) {
+            
                         let imdbId = movie.imdbID
                         $.ajax({
                             url: "https://www.omdbapi.com/?apikey=" + apiOMDB2 + imdbId,

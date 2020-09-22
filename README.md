@@ -2,6 +2,7 @@
 
 <img src="assets/images/Screen Shot 2020-09-19 at 7.55.53 PM.png">
 
+Github Pages: https://0216johnsoneric.github.io/Boxoffice-Movies/
 
 Clone lab: git clone git@github.com:0216johnsoneric/Boxoffice-Movies.git 
 Run in Browser w/ localhost or VS code browser extension
@@ -31,6 +32,6 @@ C)	Family and fans would be able to evaluate rating of movies in order to determ
 User will find this app very easy to consume important information about movies; whether the user wants to know the overall movie rating or general information about the best or the worse rating at all time. User will have that information at their fingertips.
 
 Resorces: 
-1) https://www.themoviedb.org/settings/api
+1) https://www.themoviedb.org/
 2) https://www.omdbapi.com/
 3) https://www.imdb.com/
