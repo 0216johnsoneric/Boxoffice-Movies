@@ -37,6 +37,7 @@ $(document).ready(() => {
                 console.log(response);
                 let movies = response.Search;
                 let output = '';
+                // new outputFail//
                 let outputFail = "";
 
                 $.each(movies, (index, movie) => {
@@ -50,13 +51,14 @@ $(document).ready(() => {
                         })
                             .then((response2) => {
                                 console.log(response2);
-                                //Add Outputfail 
+                                //Add Outputfail //
                                 outputFail += `
                         <div class="text-center">
                         <h4 style="text-align:center;color:black;margin-top:3px"><strong>${movie.Title} is Not Available</strong></h4>
                         <a href="https://imdb.com/title/${response2.imdbID}" target="_blank" class="button primary">IMDB Website</a>
                         </div>
                         `
+                              // End of Outputfail // 
                                 output += `
                         <div class="col-md-3">
                             <div class="text-center">
