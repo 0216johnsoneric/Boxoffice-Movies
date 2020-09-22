@@ -7,7 +7,7 @@ $(document).ready(() => {
     //  theMovieDB Query API KEY / IMAGE URL
     const apiTMDB = "aaea85d9555b588ecf30aa20af8cc8de&query=";
     const imageUrl = "https://image.tmdb.org/t/p/w500";
-    
+
 
     // SEARCH FORM EVENT LISTENERS FOR MOVIE AND TVSHOWS
     $('#searchMovieForm').on('submit', (event) => {
@@ -37,20 +37,27 @@ $(document).ready(() => {
                 console.log(response);
                 let movies = response.Search;
                 let output = '';
+                let outputFail = "";
 
                 $.each(movies, (index, movie) => {
-                // Only Render movie data with valid poster path === true
+                    // Only Render movie data with valid poster path === true
                     if (movie.Poster) {
-            
+
                         let imdbId = movie.imdbID
                         $.ajax({
                             url: "https://www.omdbapi.com/?apikey=" + apiOMDB2 + imdbId,
                             method: "Get",
                         })
-                        .then((response2) => {
-                        console.log(response2);
-
-                        output += `
+                            .then((response2) => {
+                                console.log(response2);
+                                //Add Outputfail 
+                                outputFail += `
+                        <div class="text-center">
+                        <h4 style="text-align:center;color:black;margin-top:3px"><strong>${movie.Title} is Not Available</strong></h4>
+                        <a href="https://imdb.com/title/${response2.imdbID}" target="_blank" class="button primary">IMDB Website</a>
+                        </div>
+                        `
+                                output += `
                         <div class="col-md-3">
                             <div class="text-center">
                                 <h2>${movie.Title}</h2>
@@ -74,16 +81,16 @@ $(document).ready(() => {
                             </div>
                         </div> 
                         `;
-                        $('#movies').html(output); 
-                        });
+                                $('#movies').html(output);
+                            });
                     }
                 });
-                })
+            })
             .catch((err) => {
                 console.log(err);
             });
     }
-    
+
     // theMovieDB API KEY to Query TV Shows
     function getTvShows(searchTv) {
         console.log(searchTv);
@@ -91,13 +98,13 @@ $(document).ready(() => {
             url: "https://api.themoviedb.org/3/search/tv?api_key=" + apiTMDB + searchTv,
             method: "GET",
         })
-        .then((data) => {
-            console.log(data);
-            let tvs = data.results;
-            let output = '';
-        $.each(tvs, (index, tv) => {
-            if (tv.poster_path) {
-                output += `
+            .then((data) => {
+                console.log(data);
+                let tvs = data.results;
+                let output = '';
+                $.each(tvs, (index, tv) => {
+                    if (tv.poster_path) {
+                        output += `
                 <div class="col-md-3">
                     <div class="lists text-center">
                         <br></br>
@@ -117,14 +124,14 @@ $(document).ready(() => {
                 </div> 
                 `;
 
-            }
+                    }
 
-        });
-        $('#tvshows').html(output);
-        })
-        .catch ((err) => {
-        console.log(err);
-        });
+                });
+                $('#tvshows').html(output);
+            })
+            .catch((err) => {
+                console.log(err);
+            });
 
     }
 
